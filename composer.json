@@ -1,0 +1,6 @@
+{
+        "name": "lil-works/contact-bundle",
+        "require": {
+            "php": ">=5.3.0"
+        }
+    }

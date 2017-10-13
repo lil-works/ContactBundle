@@ -1,0 +1,4 @@
+services:
+#    lil_works_contact.example:
+#        class: LilWorks\ContactBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

@@ -1,0 +1,95 @@
+<?php
+namespace LilWorks\ContactBundle\Entity;
+
+
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="lilworks_contact_message")
+ * @ORM\Entity(repositoryClass="LilWorks\ContactBundle\Entity\Repository\MessageRepository")
+ * @ORM\HasLifecycleCallbacks()
+ */
+class Message
+{
+    /**
+     * @ORM\PreFlush()
+     */
+    public function preFlush()
+    {
+        if($this->createdAt == null)
+            $this->createdAt = new \DateTime();
+
+    }
+
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer",name="id")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+
+    /**
+     * @var datetime
+     *
+     * @ORM\Column(name="subject", type="datetime",nullable=false)
+     */
+    private $createdAt;
+
+    /**
+     * @var text
+     *
+     * @ORM\Column(name="messageSubject", type="text",nullable=true)
+     */
+    private $messageSubject;
+
+    /**
+     * @var text
+     *
+     * @ORM\Column(name="message", type="text",nullable=false)
+     * @Assert\NotBlank()
+     */
+    private $message;
+
+    /**
+     * @var text
+     *
+     * @ORM\Column(name="response", type="text",nullable=true)
+     */
+    private $response;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string",length=255,nullable=true)
+     * @Assert\NotBlank()
+     */
+    private $email;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="readed", type="boolean",nullable=true)
+     */
+    private $readed;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="responseSended", type="boolean",nullable=true)
+     */
+    private $responseSended;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="getCopy", type="boolean",nullable=true)
+     */
+    private $getCopy;
+
+
+
+}

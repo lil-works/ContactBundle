@@ -1,0 +1,9 @@
+lil_works_contact_homepage:
+    path:     /
+    defaults: { _controller: LilWorksContactBundle:Default:index }
+lil_works_contact_form:
+    path:     /form
+    defaults: { _controller: LilWorksContactBundle:Default:form }
+lil_works_contact_sent:
+    path:     /{id}/sent
+    defaults: { _controller: LilWorksContactBundle:Default:sent }

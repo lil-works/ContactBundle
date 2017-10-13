@@ -1,6 +1,6 @@
 <?php
 
-namespace LilWorks\ContactBundle\Tests\Controller;
+namespace Lilworks\ContactBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

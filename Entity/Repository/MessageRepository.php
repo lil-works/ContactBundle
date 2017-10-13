@@ -1,6 +1,6 @@
 <?php
 
-namespace LilWorks\ContactBundle\Entity\Repository;
+namespace Lilworks\ContactBundle\Entity\Repository;
 
 /**
  * MessageRepository

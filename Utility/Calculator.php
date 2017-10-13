@@ -1,5 +1,5 @@
 <?php
-namespace LilWorks\ContactBundle\Utility;
+namespace Lilworks\ContactBundle\Utility;
 
 class Calculator
 {

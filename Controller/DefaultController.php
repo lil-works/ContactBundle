@@ -1,8 +1,8 @@
 <?php
 
-namespace LilWorks\ContactBundle\Controller;
+namespace Lilworks\ContactBundle\Controller;
 
-use LilWorks\ContactBundle\Entity\Message;
+use Lilworks\ContactBundle\Entity\Message;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -11,12 +11,12 @@ class DefaultController extends Controller
     public function indexAction()
     {
 
-        return $this->render('LilWorksContactBundle:Default:index.html.twig');
+        return $this->render('LilworksContactBundle:Default:index.html.twig');
     }
     public function formAction(Request $request)
     {
         $message = new Message();
-        $form = $this->createForm('LilWorks\ContactBundle\Form\MessageType', $message,array('user'=>$this->getUser()));
+        $form = $this->createForm('Lilworks\ContactBundle\Form\MessageType', $message,array('user'=>$this->getUser()));
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -32,7 +32,7 @@ class DefaultController extends Controller
             ));
         }
 
-        return $this->render('LilWorksContactBundle:Default:form.html.twig', array(
+        return $this->render('LilworksContactBundle:Default:form.html.twig', array(
             'form' => $form->createView(),
         ));
 
@@ -42,7 +42,7 @@ class DefaultController extends Controller
     public function sentAction(Message $message)
     {
 
-        return $this->render('LilWorksContactBundle:Default:sent.html.twig',array(
+        return $this->render('LilworksContactBundle:Default:sent.html.twig',array(
             'message'=>$message
         ));
     }

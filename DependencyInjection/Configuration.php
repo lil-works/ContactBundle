@@ -1,6 +1,6 @@
 <?php
 
-namespace LilWorks\ContactBundle\DependencyInjection;
+namespace Lilworks\ContactBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

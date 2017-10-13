@@ -1,7 +1,7 @@
 <?php
-namespace LilWorks\ContactBundle\Tests\Utility;
+namespace Lilworks\ContactBundle\Tests\Utility;
 
-use LilWorks\ContactBundle\Utility\Calculator;
+use Lilworks\ContactBundle\Utility\Calculator;
 use PHPUnit\Framework\TestCase;
 
 class CalculatorTest extends TestCase

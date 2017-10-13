@@ -1,8 +1,8 @@
 <?php
-namespace LilWorks\ContactBundle;
+namespace Lilworks\ContactBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class LilWorksContactBundle extends Bundle
+class LilworksContactBundle extends Bundle
 {
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace LilWorks\ContactBundle\Form;
+namespace Lilworks\ContactBundle\Form;
 
 
 
@@ -44,7 +44,7 @@ class MessageType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'LilWorks\ContactBundle\Entity\Message',
+            'data_class' => 'Lilworks\ContactBundle\Entity\Message',
             'user'=>null,
             'translation_domain' => 'lilworks_contact'
         ));

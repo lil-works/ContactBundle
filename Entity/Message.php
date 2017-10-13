@@ -1,5 +1,5 @@
 <?php
-namespace LilWorks\ContactBundle\Entity;
+namespace Lilworks\ContactBundle\Entity;
 
 
 use Doctrine\ORM\Mapping as ORM;
@@ -8,7 +8,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * @ORM\Entity
  * @ORM\Table(name="lilworks_contact_message")
- * @ORM\Entity(repositoryClass="LilWorks\ContactBundle\Entity\Repository\MessageRepository")
+ * @ORM\Entity(repositoryClass="Lilworks\ContactBundle\Entity\Repository\MessageRepository")
  * @ORM\HasLifecycleCallbacks()
  */
 class Message
